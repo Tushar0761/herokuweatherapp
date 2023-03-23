@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <img src="logo-color.png" class="logoimg" alt="" srcset="">
+
+    <form class="frm" action="/" method="post">
+      <label class="title" for="cityInput">Enter City Name</label>
+      <input class="input-field" id="cityInput" name="cityName" type="text" />
+      <button class="submit-btn" type="submit">Search</button>
+    </form>
+  </div>
+
+  <div class="container2">
+    <div class="desc">
+      <h1 class="cityName">
+        <%= query %>
+      </h1>
+      <img src="<%= imageUrl %>" alt="" />
+    </div>
+    <p class="temp">
+      <%= temperature %> °C
+    </p>
+    <p class="resultp">The weather is currently <%= weatherDescription %>
+    </p>
+  </div>
+  <div class="detailedweather">
+    <table class="detailetable">
+      <tr class="cityhead">
+        <td class="cityhead" colspan="2"> Weather Details - <%= query %>,<%= country %>
+        </td>
+      </tr>
+      <tr class="detailes">
+        <td>
+          temperature
+        </td>
+        <td>
+          <%= temperature %> °C
+        </td>
+      </tr>
+      <tr class="detailes">
+        <td>
+          Real feel
+        </td>
+        <td>
+          <%= real_feel %> °C
+        </td>
+      </tr>
+      <tr class="detailes">
+        <td>
+          Pressure
+        </td>
+        <td>
+          <%= pressure %>
+        </td>
+      </tr>
+      <tr class="detailes">
+        <td>
+          Humidity
+        </td>
+        <td>
+          <%= humidity %> %
+        </td>
+      </tr>
+      <tr class="detailes">
+        <td>
+          Visibility
+        </td>
+        <td>
+          <%= visibility %> KM
+        </td>
+      </tr>
+      <tr class="detailes">
+        <td>
+          Wind Speed
+        </td>
+        <td>
+          <%= wind_speed %> Km/H
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
