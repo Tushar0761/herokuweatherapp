@@ -3,6 +3,8 @@ const app = express();
 const bodyParser = require("body-parser");
 const https = require("https");
 
+const port = process.env.PORT || 3000;
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
@@ -49,8 +51,6 @@ app.post("/", function (req, res) {
 
 
 
-      // console.log(weatherData);
-      console.log(weatherData);
 
 
       res.render('result', {
@@ -77,6 +77,6 @@ app.post("/", function (req, res) {
   });
 });
 
-app.listen(3000, function () {
-  console.log("Server is up and runnig on port 3000.");
+app.listen(port, () => {
+  console.log('Server is up and runnig on port 3000.');
 });
