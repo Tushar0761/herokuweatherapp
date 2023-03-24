@@ -55,8 +55,7 @@ app.post("/", function (req, res) {
 
       res.render('result', {
         weatherDescription: weatherDescription,
-        query: query,
-        temperature: temperature,
+        query: query, temperature: temperature,
         imageUrl: imageUrl,
         country: country,
         real_feel: real_feel,

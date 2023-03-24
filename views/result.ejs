@@ -20,75 +20,79 @@
     </form>
   </div>
 
-  <div class="container2">
-    <div class="desc">
-      <h1 class="cityName">
-        <%= query %>
-      </h1>
-      <img src="<%= imageUrl %>" alt="" />
+  <div class="mainCont">
+    <div class="container2">
+      <div class="desc">
+        <h1 class="cityName">
+          <%= query %>
+        </h1>
+        <img src="<%= imageUrl %>" alt="" />
+      </div>
+      <p class="temp">
+        <%= temperature %> °C
+      </p>
+      <p class="resultp">The weather is currently <%= weatherDescription %>
+      </p>
     </div>
-    <p class="temp">
-      <%= temperature %> °C
-    </p>
-    <p class="resultp">The weather is currently <%= weatherDescription %>
-    </p>
+    <div class="detailedweather">
+      <table class="detailetable">
+        <tr class="cityhead">
+          <td class="cityhead" colspan="2"> Weather Details - <%= query %>,<%= country %>
+          </td>
+        </tr>
+        <tr class="detailes">
+          <td>
+            temperature
+          </td>
+          <td>
+            <%= temperature %> °C
+          </td>
+        </tr>
+        <tr class="detailes">
+          <td>
+            Real feel
+          </td>
+          <td>
+            <%= real_feel %> °C
+          </td>
+        </tr>
+        <tr class="detailes">
+          <td>
+            Pressure
+          </td>
+          <td>
+            <%= pressure %>
+          </td>
+        </tr>
+        <tr class="detailes">
+          <td>
+            Humidity
+          </td>
+          <td>
+            <%= humidity %> %
+          </td>
+        </tr>
+        <tr class="detailes">
+          <td>
+            Visibility
+          </td>
+          <td>
+            <%= visibility %> KM
+          </td>
+        </tr>
+        <tr class="detailes">
+          <td>
+            Wind Speed
+          </td>
+          <td>
+            <%= wind_speed %> Km/H
+          </td>
+        </tr>
+      </table>
+    </div>
   </div>
-  <div class="detailedweather">
-    <table class="detailetable">
-      <tr class="cityhead">
-        <td class="cityhead" colspan="2"> Weather Details - <%= query %>,<%= country %>
-        </td>
-      </tr>
-      <tr class="detailes">
-        <td>
-          temperature
-        </td>
-        <td>
-          <%= temperature %> °C
-        </td>
-      </tr>
-      <tr class="detailes">
-        <td>
-          Real feel
-        </td>
-        <td>
-          <%= real_feel %> °C
-        </td>
-      </tr>
-      <tr class="detailes">
-        <td>
-          Pressure
-        </td>
-        <td>
-          <%= pressure %>
-        </td>
-      </tr>
-      <tr class="detailes">
-        <td>
-          Humidity
-        </td>
-        <td>
-          <%= humidity %> %
-        </td>
-      </tr>
-      <tr class="detailes">
-        <td>
-          Visibility
-        </td>
-        <td>
-          <%= visibility %> KM
-        </td>
-      </tr>
-      <tr class="detailes">
-        <td>
-          Wind Speed
-        </td>
-        <td>
-          <%= wind_speed %> Km/H
-        </td>
-      </tr>
-    </table>
-  </div>
+
+
 </body>
 
 </html>

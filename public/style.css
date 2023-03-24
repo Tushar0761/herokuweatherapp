@@ -23,7 +23,8 @@ body {
 }
 
 .logoimg {
-    height: 85%;
+    height: 50%;
+    margin-top: 1rem;
     /* width: 60%; */
     border-radius: 50px;
 }
@@ -32,16 +33,17 @@ body {
 .title {
     color: black;
     font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .input-field {
     width: 30%;
-    border: 4px solid #83bde0;
+    border: 2px solid #83bde0;
     text-align: center;
     border-radius: 10px;
     font-size: 22px;
     padding: 10px 40px;
-
+    margin-top: 1rem;
 
 }
 
@@ -72,16 +74,26 @@ body {
 
 .submit-btn:hover {
     background-color: #2493bb;
+    text-decoration: underline;
     cursor: pointer;
 
 
 }
 
+.mainCont {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid black;
+    border-radius: 5%;
+
+}
 
 .container2 {
-    margin-top: 3rem;
+    margin-top: 1rem;
+    margin: auto;
     display: flex;
     flex-direction: column;
+    /* border: 2px solid black; */
     gap: 1rem;
     color: black;
     justify-content: center;
@@ -89,8 +101,9 @@ body {
 
 .desc {
     display: flex;
-    gap: 5rem;
+    gap: 1rem;
     align-items: center;
+    margin: auto;
 }
 
 .temp {
@@ -98,12 +111,12 @@ body {
 }
 
 .cityName {
-    font-size: 45px;
+    font-size: 35px;
     text-transform: capitalize;
 }
 
 .resultp {
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .detailedweather {
@@ -114,7 +127,11 @@ body {
 
 .detailetable {
     padding: 5px;
-    width: 30rem;
+    width: 35rem;
+    /* border-radius: 10rem; */
+    /* border: 1.5px solid black; */
+    /* border-radius: 2%; */
+    margin-bottom: 2rem;
     /* background-color: aquamarine; */
 
 }
@@ -124,22 +141,23 @@ body {
     text-align: center;
     padding: 10px;
     font-size: 24px;
-    margin-bottom: 3rem;
-    background-color: white;
+    /* background-color: whitesmoke; */
 }
 
 table,
 td,
 tr {
+    text-align: center;
     padding: 5px;
-    border-bottom: 1px solid;
+    /* border-bottom: 1px solid; */
     border-collapse: collapse;
+    /* border: none; */
 }
 
 
 .detailes {
     font-size: 20px;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     text-align: left;
     margin: 5px;
 }
